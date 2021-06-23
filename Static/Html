@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body
+        {
+            min-height: 100vh;
+            background-image: linear-gradient(rgb(147, 241, 241),rgb(225, 101, 236));
+            font-family: 'Nanum Gothic', sans-serif;
+            background: url('./6.jpg') center no-repeat fixed;
+            overflow-y: visible;
+            scroll-behavior: smooth;
+            color: #000;
+        }
+
+        section
+        {
+            height: 600px;
+            background: #fff;
+            margin-top: 300px;
+            border-radius: 25px;
+            padding: 15px;
+        }
+
+        .container
+        {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            background: #fff url('./2.jpg') center  fixed;
+            flex-direction: column;
+            justify-content: center;
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid rgb(231, 175, 70);
+            box-shadow: 2px 8px 115px rgba(0,0,0,0.5);
+        }
+
+        .content
+        {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(5px);
+            border: 1px solid #fff;
+            box-shadow: 2px 8px 15px rgba(0,0,0,0.5);
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .title
+        {
+            width: 100%;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            font-weight: bolder;
+            text-transform: capitalize;
+        }
+
+        .title p
+        {
+            font-size: 14px;
+            margin-top: 5px;
+            font-weight:bold;
+            color: #000;
+        }
+
+        .desc
+        {
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-align: left;
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+
+        .row
+        {
+            display: flex;
+            margin-top: 25px;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 15px 0px;
+        }
+
+        .col
+        {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 10px;
+        }
+
+        li ,dd ,dt
+        {
+            margin-bottom: 5px;
+            text-transform: capitalize;
+            font-weight: normal;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="content">
+                <div class="title" style="font-size: 32px;">
+                    <h2 style="-webkit-text-stroke: 1px #f00; color: transparent;">Parallax Effect</h2>
+                    <p>it is a web site trend where the background content is moved at a different speed than the foreground content.</p>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="title">
+                            <h2>Unordered list</h2>
+                        </div>
+                        <div class="desc">
+                            <p>it is a collection of related items that have no special order.</p>
+                        </div>
+                        <div class="demo">
+                            <ul>
+                                <li>learnovate</li>
+                                <li>e-commerce</li>
+                                <li>summer</li>
+                                <li>internship</li>
+                                <li>2021</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="title">
+                            <h2>ordered list</h2>
+                        </div>
+                        <div class="desc">
+                            <p>it is a collection of related items that have special order.</p>
+                        </div>
+                        <div class="demo">
+                            <ol>
+                                <li>learnovate</li>
+                                <li>e-commerce</li>
+                                <li>summer</li>
+                                <li>internship</li>
+                                <li>2021</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="title">
+                            <h2>description list</h2>
+                        </div>
+                        <div class="desc">
+                            <p>it is a list of items with a description of each item.</p>
+                        </div>
+                        <div class="demo">
+                            <dl>
+                                <dt>coffee</dt>
+                                <dd>-black hot drink</dd>
+                                <dt>milk</dt>
+                                <dd>-white cold drink</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
